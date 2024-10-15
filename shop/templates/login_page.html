@@ -1,0 +1,76 @@
+{% extends 'struct.html' %}
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <link rel = 'stylesheet' href = '{% static "style.css" %}'>
+    <title>Login</title>
+</head>
+<body>
+{% block main %}
+<!--    <form method="post" action="http://127.0.0.1:8000/>-->
+    <form action="http://127.0.0.1:8000/">
+<!--        {% csrf_token %}-->
+        <br>
+        <table border="0" align="center" width="1002">
+            <tr>
+                <td width="501" align="right">
+                    <label for="username">Username:</label>
+                </td>
+                <td align="left">
+                    <input style="font-family: Arial, sans-serif; font-size: 20px;" type="text" id="username" maxlength="25" required>
+                </td>
+            </tr>
+            <tr>
+                <td width="501" align="right">
+                    <label for="password">Password: </label>
+                </td>
+                <td>
+                    <input style="font-family: Arial, sans-serif; font-size: 20px;" type="password" id="password" maxlength="25" required>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table border="0" align="center" width="1002">
+            <tr>
+                <td align="center" colspan="2">
+                    <button class="btn2">Login</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+        <table border="0" align="center" width="1002">
+            <tr>
+                <td align="right">
+                    <form action="http://127.0.0.1:8000/html_reg/"><button class="btn2">HTML-registretion</button></form>
+                </td>
+                <td align="left">
+                    <form action="http://127.0.0.1:8000/django_reg/"><button class="btn2">Django-registretion</button></form>
+                </td>
+            </tr>
+        </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+{% endblock %}
+</body>
+</html>

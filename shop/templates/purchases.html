@@ -1,0 +1,18 @@
+{% extends 'struct.html' %}
+{% load static %}
+{% block pagename %}
+	{{ block.super }}
+{% endblock %}
+{% block menu %}
+{{ block.super }}
+{% endblock %}
+{% block main %}
+	<table border="0" align="center" width="1002">
+		<tr align="center">
+			<td><img src="{% static 'Empty_basket+.png' %}" width="559" height="600" /></td>
+		</tr>
+	</table>
+{% endblock %}
+{% block footer %}
+{{ block.super }}
+{% endblock %}
